@@ -2,16 +2,19 @@
 
 Upon launching demoBankingApplication, you will be asked to create user 
 
-press y - to add a user
+press y - to add a user by entering the name of user
 press n - to exit adding user
 
 After user creation, you can test using following operation :
 
 Get all the users 
-http://localhost:8080/users/all [GET]
+curl --location --request GET 'http://localhost:8080/users/all'
+<img width="850" alt="Screenshot 2024-01-11 at 7 54 10 PM" src="https://github.com/shriharistark/banking-spring-demo/assets/28220088/7188631e-1dd0-445f-b892-950603ae2657">
 
 Get balance of a user
-http://localhost:8080/users/username/balance [GET]
+curl --location --request GET 'http://localhost:8080/users/doe/balance'
+<img width="866" alt="Screenshot 2024-01-11 at 7 54 35 PM" src="https://github.com/shriharistark/banking-spring-demo/assets/28220088/ce7f8518-5dff-4a65-9d4e-34ee199e80b4">
 
 Update balance of a user
-http://localhost:8080/users/username/balance/200 [PUT]
+curl --location --request PUT 'http://localhost:8080/users/dhoni/balance/700'
+<img width="848" alt="Screenshot 2024-01-11 at 7 52 45 PM" src="https://github.com/shriharistark/banking-spring-demo/assets/28220088/49dd3583-ef56-485c-bc35-d793cc359aa4">
