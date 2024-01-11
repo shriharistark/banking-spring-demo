@@ -1,4 +1,4 @@
-Demo banking app built on java spring, maven
+<h2> Demo banking app built on java spring, maven </h2>
 
 Upon launching demoBankingApplication, you will be asked to create user 
 
